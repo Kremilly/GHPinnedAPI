@@ -27,9 +27,6 @@ https://gh-pinned-api.vercel.app/api?user=YOUR_USERNAME
 ## Queries Parameters
 
 * `user`: Set the username
-* `width`: Set the with of thumbnail
-* `height`: Set the height of thumbnail
-* `page`: Set the page number of file for generate thumbnail
 
 ## Dependencies
 
