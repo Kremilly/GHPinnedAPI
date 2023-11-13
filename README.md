@@ -1,4 +1,4 @@
-# pdfThumb
+# ghPinnedAPI
 
 Clone this respository:
 
