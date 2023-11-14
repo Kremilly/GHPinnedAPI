@@ -74,13 +74,13 @@ class GitHub:
 
         try:
             response = requests.post(url, json={"query": query}, headers=headers)
-            response.raise_for_status()  # Raise HTTPError for bad responses
+            response.raise_for_status()
 
             if response.status_code == 200:
                 data = response.json()
                 pinned_repos = cls.extract_repos(data["data"]["user"]["pinnedItems"]["nodes"])
                 org_repos = [
-                    cls.extract_repo(org["repositories"]["nodes"])
+                    cls.extract_repos(org["repositories"]["nodes"])
                     for org in data["data"]["user"]["organizations"]["nodes"]
                 ]
                 return pinned_repos + org_repos
