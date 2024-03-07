@@ -48,6 +48,8 @@ fetch('https://gh-pinned-api.vercel.app/api?user=kremilly').then(
 
 > *The API will return a JSON with all your pinned repositories (if any; otherwise, it will return an empty JSON)*
 
+> *See [here](https://github.com/kremilly/ghPinnedAPI/tree/main/examples) others examples in others languages and using Axios.js*
+
 #### Simple output of request:
 
 ```json
