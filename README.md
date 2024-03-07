@@ -22,6 +22,14 @@ To run the server, use:
 python index.py
 ```
 
+> To run the project locally, you'll need to create a `.env` file in the project's root directory with the following variable: `GH_TOKEN`, and its value should be your GitHub access token. To obtain the token, please access this [link](https://docs.github.com/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
+
+Example of `.env` file
+
+```.env
+GH_TOKEN=YOUR_GITHUB_TOKEN
+```
+
 ## Using the api on your project
 
 If you want to add your pinned repositories to your portfolio or website and can't find an API that works for this, then your problems are over. I've created an API that does exactly that, and its usage is extremely easy. Simply pass your GitHub username as a query parameter.
