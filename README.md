@@ -1,10 +1,10 @@
 # ghPinnedAPI
 
-Get your pinned respositories api
+Get your pinned repositories api
 
 ## To locally execute the project
 
-Clone this respository:
+Clone this repository:
 
 ```shell
 git clone https://github.com/kremilly/ghPinnedAPI
@@ -22,7 +22,7 @@ To run the server, use:
 python index.py
 ```
 
-> To run the project locally, you'll need to create a `.env` file in the project's root directory with the following variable: `GH_TOKEN`, and its value should be your GitHub access token. To obtain the token, please access this [link](https://docs.github.com/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
+To run the project locally, you'll need to create a `.env` file in the project's root directory with the following variable: `GH_TOKEN`, and its value should be your GitHub access token. To obtain the token, please access this [link](https://docs.github.com/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 Example of `.env` file
 
@@ -62,7 +62,7 @@ fetch('https://gh-pinned-api.vercel.app/api?user=kremilly').then(
 
 ```json
 {
-    "description": "Get your pinned respositories api",
+    "description": "Get your pinned repositories api",
     "forks": 0,
     "home": "https://gh-pinned-api.vercel.app",
     "languages": [
