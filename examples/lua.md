@@ -18,9 +18,11 @@ end
 
 ### Install the libraries
 
-To install the libraries, execute this
+To install the libraries, execute this:
 
 ```shell
 luarocks install luasocket
 luarocks install dkjson
 ```
+
+Install [LuaRocks](https://luarocks.org) for use the modules with Lua, click [here](https://github.com/luarocks/luarocks/wiki/Download) to download the Lua package manager.

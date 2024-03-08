@@ -45,8 +45,7 @@ https://gh-pinned-api.vercel.app/api?user=YOUR_USERNAME
 ### A simple example of use in JavaScript
 
 ```javascript
-// Fetch is a default function of javascript for requests
-// Replace kremilly for your GitHub username
+// Replace "kremilly" for your GitHub username
 fetch('https://gh-pinned-api.vercel.app/api?user=kremilly').then(
    json => json.json()
 ).then(callback => { 
@@ -83,7 +82,7 @@ fetch('https://gh-pinned-api.vercel.app/api?user=kremilly').then(
 
 ### Queries Parameters
 
-* `user`: Set the username
+* `user` Set the username
 
 ### Data returned by the API
 
