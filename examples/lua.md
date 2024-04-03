@@ -5,7 +5,7 @@ local http = require("socket.http")
 local json = require("json")
 
 -- Replace "kremilly" with your GitHub username
-local url = "https://gh-pinned-api.vercel.app/api?user=kremilly"
+local url = "https://gh-pin.kremilly.com/api?user=kremilly"
 local response, status = http.request(url)
 
 if status == 200 then

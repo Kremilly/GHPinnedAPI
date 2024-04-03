@@ -5,7 +5,7 @@ require 'net/http'
 require 'json'
 
 # Replace "kremilly" with your GitHub username
-url = URI('https://gh-pinned-api.vercel.app/api?user=kremilly')
+url = URI('https://gh-pin.kremilly.com/api?user=kremilly')
 response = Net::HTTP.get(url)
 data = JSON.parse(response)
 

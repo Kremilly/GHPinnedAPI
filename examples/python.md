@@ -4,7 +4,7 @@
 import requests
 
 # Replace "kremilly" with your GitHub username
-response = requests.get('https://gh-pinned-api.vercel.app/api?user=kremilly')
+response = requests.get('https://gh-pin.kremilly.com/api?user=kremilly')
 data = response.json()
 
 print(data)

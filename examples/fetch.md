@@ -2,7 +2,7 @@
 
 ```javascript
 // Replace "kremilly" for your GitHub username
-fetch('https://gh-pinned-api.vercel.app/api?user=kremilly').then(
+fetch('https://gh-pin.kremilly.com/api?user=kremilly').then(
    json => json.json()
 ).then(callback => { 
    console.log(callback) 

@@ -2,7 +2,7 @@
 
 ```php
 # Replace "kremilly" with your GitHub username
-$url = 'https://gh-pinned-api.vercel.app/api?user=kremilly';
+$url = 'https://gh-pin.kremilly.com/api?user=kremilly';
 $data = file_get_contents($url);
 $response = json_decode($data);
 

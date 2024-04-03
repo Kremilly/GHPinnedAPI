@@ -4,7 +4,7 @@
 const axios = require('axios');
 
 // Replace "kremilly" with your GitHub username
-axios.get('https://gh-pinned-api.vercel.app/api?user=kremilly')
+axios.get('https://gh-pin.kremilly.com/api?user=kremilly')
   .then(response => {
     console.log(response.data);
   })

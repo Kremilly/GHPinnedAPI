@@ -11,7 +11,7 @@ import (
 
 func main() {
 	// Replace "kremilly" with your GitHub username
-	url := "https://gh-pinned-api.vercel.app/api?user=kremilly"
+	url := "https://gh-pin.kremilly.com/api?user=kremilly"
 
 	response, err := http.Get(url)
 	if err != nil {

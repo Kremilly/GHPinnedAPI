@@ -1,9 +1,18 @@
 import os
-from dotenv import load_dotenv
-from core.github import GitHub
-from flask import Flask, jsonify, request, render_template
+
+from flask_caching import Cache
+from flask import Flask, render_template
+
+from core.github_endpoints import GitHubEndpoints
 
 app = Flask(__name__)
+app.config.from_mapping({
+    "DEBUG": True,
+    "CACHE_TYPE": "SimpleCache",
+    "CACHE_DEFAULT_TIMEOUT": 300
+})
+
+cache = Cache(app)
 
 @app.route("/")
 def index():
@@ -14,21 +23,9 @@ def index():
     )
 
 @app.route('/api', methods=['GET'])
-def repos_pinned():
-    load_dotenv()
-
-    user = request.args.get('user')
-    token = os.environ.get('GH_TOKEN')
-
-    if not user:
-        return jsonify({"error": "Parameter 'user' not provided"}), 400
-
-    repos_info = GitHub.get_repository_info(user, token)
-
-    if repos_info:
-        return jsonify(repos_info)
-    else:
-        return jsonify({"error": "Error fetching pinned repositories"}), 500
+@cache.cached(timeout=180)
+def get_pinneds():
+    return GitHubEndpoints.repos_pinned()
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
