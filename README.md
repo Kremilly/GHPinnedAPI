@@ -40,8 +40,10 @@ If you want to add your pinned repositories to your portfolio or website and can
 https://gh-pin.kremilly.com/api?user=YOUR_USERNAME
 ```
 
+> [!note]
 > *Replace `YOUR_USERNAME` with your GitHub username*
->
+
+> [!note]
 > *We request the use of the new endpoint; however, the old one is still operational.*
 
 ### A simple example of use in JavaScript
@@ -55,8 +57,10 @@ fetch('https://gh-pin.kremilly.com/api?user=kremilly').then(
 })
 ```
 
+> [!note]
 > *The API will return a JSON with all your pinned repositories (if any; otherwise, it will return an empty JSON)*
 
+> [!note]
 > *See [here](https://github.com/kremilly/ghPinnedAPI/tree/main/examples) others examples in others languages and using Axios.js*
 
 #### Simple output of request:
