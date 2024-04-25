@@ -2,7 +2,7 @@
 
 ```javascript
 // Replace "kremilly" for your GitHub username
-fetch('https://gh-pin.kremilly.com/api?user=kremilly').then(
+fetch('https://api.kremilly.com/github?user=kremilly').then(
    json => json.json()
 ).then(callback => { 
    console.log(callback) 

@@ -2,7 +2,7 @@
 
 ```php
 # Replace "kremilly" with your GitHub username
-$url = 'https://gh-pin.kremilly.com/api?user=kremilly';
+$url = 'https://api.kremilly.com/github?user=kremilly';
 $data = file_get_contents($url);
 $response = json_decode($data);
 

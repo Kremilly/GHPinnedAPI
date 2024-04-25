@@ -4,7 +4,7 @@
 const axios = require('axios');
 
 // Replace "kremilly" with your GitHub username
-axios.get('https://gh-pin.kremilly.com/api?user=kremilly')
+axios.get('https://api.kremilly.com/github?user=kremilly')
   .then(response => {
     console.log(response.data);
   })
