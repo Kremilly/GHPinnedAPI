@@ -79,10 +79,3 @@ fetch('api.kremilly.com/github?user=kremilly').then(
 * User does not exist on GitHub (Status code: 404)
 * Error fetching pinned repositories (Status code: 500)
 
-## Dependencies
-
-* Python
-* Flask
-* GraphQL
-* requests
-* python-dotenv
