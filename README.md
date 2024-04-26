@@ -2,6 +2,13 @@
 
 Get your pinned repositories api
 
+> [!warning]
+> This project will no longer be updated. All new updates to this API will be made in the [**MyApis**](https://github.com/kremilly/MyApis) repository, and only security updates will be made in this current repository.
+
+Refactoring:
+
+This project will not receive further updates. All new updates to this API will be done in the MyApis repository, while only security updates will be applied to this current repository.
+
 ## Using the api on your project
 
 If you want to add your pinned repositories to your portfolio or website and can't find an API that works for this, then your problems are over. I've created an API that does exactly that, and its usage is extremely easy. Simply pass your GitHub username as a query parameter.
